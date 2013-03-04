@@ -5,8 +5,9 @@
 	"homepage": "http://appname.org",
 	"version": "1.0.0",
 	"authors": [
-		"Hans Wurst"
+		"David Osborne"
 	],
 	"dependencies": {
+        "vibe-d" : ">=0.7.13"
 	}
 }

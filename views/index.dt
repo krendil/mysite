@@ -1,6 +1,12 @@
-extends layout
+extends base
 
 block body
-	h1 Example page - Home
-	p Hello, world!
+  h1#pagetitle Main Page
+  ul#frontmenu
+    li
+      h2 Item 1
+    li
+      h2 Item 2
+    li
+      h2 Item 3
 
