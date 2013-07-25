@@ -1,17 +1,26 @@
 import vibe.d;
 
-void index(HttpServerRequest req, HttpServerResponse res) {
+import vibelog.vibelog;
+
+void index(HTTPServerRequest req, HTTPServerResponse res) {
     auto title = "Main page";
 	res.renderCompat!("index.dt", string, "title")(title);
 }
 
 static this() {
-	auto router = new UrlRouter();
+	auto router = new URLRouter();
+
 	router.get("/", &index);
+
+	auto blogsettings = new VibeLogSettings;
+	blogsettings.configName = "vibelog";
+	blogsettings.siteUrl = URL.parse("http://localhost:8080/");
+//	blogsettings.databasePort = 28017;
+	registerVibeLog(blogsettings, router);
+
 	router.get("*", serveStaticFiles("./public/"));
 
-	auto settings = new HttpServerSettings;
+	auto settings = new HTTPServerSettings;
 	settings.port = 8080;
-
-	listenHttp(settings, router);
+	listenHTTP(settings, router);
 }
