@@ -14,8 +14,8 @@ static this() {
 
 	auto blogsettings = new VibeLogSettings;
 	blogsettings.configName = "vibelog";
-	blogsettings.siteUrl = URL.parse("http://localhost:8080/");
-//	blogsettings.databasePort = 28017;
+	blogsettings.siteUrl = URL.parse("http://localhost:8080/blog/");
+	blogsettings.databaseHost = "krendil.ssh22.net";
 	registerVibeLog(blogsettings, router);
 
 	router.get("*", serveStaticFiles("./public/"));
