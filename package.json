@@ -8,6 +8,7 @@
 		"David Osborne"
 	],
 	"dependencies": {
+		"vibe-d" : "~master",
 		"vibelog" : "~master",
 	},
 }

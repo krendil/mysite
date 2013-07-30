@@ -2,15 +2,8 @@ import vibe.d;
 
 import vibelog.vibelog;
 
-void index(HTTPServerRequest req, HTTPServerResponse res) {
-    auto title = "Main page";
-	res.renderCompat!("index.dt", string, "title")(title);
-}
-
 static this() {
 	auto router = new URLRouter();
-
-	router.get("/", &index);
 
 	auto blogsettings = new VibeLogSettings;
 	blogsettings.configName = "vibelog";
