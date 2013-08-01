@@ -14,8 +14,9 @@ nav {
     top: 0px;
     bottom: 0px;
     left: 0px;
-    background-color: #ed9d13;
     width: 120px;
+    background-color: #ed9d13;
+    color: #111111;
 }
 
 #maincolumn {
@@ -27,9 +28,10 @@ nav {
     max-height: 100%;
 }
 
-header {
+#maincolumn > header {
     height: 55px;
-    background-color: #506070;
+    background-color: #333330;
+    color: #cccccc;
 }
 
 .container {
@@ -39,15 +41,22 @@ header {
 }
 
 main {
-    background-color: #cccccc;
+    display: block;
+    background-color: #bcb399;
     min-width: 200px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    min-height: 100%;
-
-    padding: 2em;
+    //min-height: 100%;
+    padding: 1.5em;
 }
 
-
+#vibelogContent {
+    max-width: 800px;
+    margin-left: 2em;
+    margin-right: auto;
+}
+.blogPostContent p {
+    color: #000000;
+    margin: 0.5em;
+    line-height: 1.5em;
+    //font-size: larger;
+}
 
