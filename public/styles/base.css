@@ -22,7 +22,7 @@ a:visited {
 }
 
 a:hover {
-    color: #315423;
+    color: #235448;
 }
 
 /* Nav bar */
@@ -34,7 +34,10 @@ nav {
     left: 0px;
     width: 120px;
     background-color: #315423;
-    color: #cccccc;
+}
+
+#navSpacer {
+    height: 0.5em;
 }
 
 ul.navigation {
@@ -42,15 +45,23 @@ ul.navigation {
     position: static;
     margin-left: auto;
     margin-right: auto;
-    list-style-type: none;
 }
 
 
 li.navItem {
-    font-weight: bold;
-    margin: 4px;
+    margin: 0.2em;
     margin-left: 1em;
     list-style-type: none;
+}
+
+li.navItem a {
+    color: #cccccc;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+li.navItem a:hover {
+    color: #dddddd;
 }
 
 /* Header */
@@ -108,7 +119,7 @@ header h2 a:visited {
 }
 
 header h2 a:hover {
-    color: #315423;
+    color: #235448;
 }
 
 /* Blog post text */

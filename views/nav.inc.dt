@@ -1,4 +1,8 @@
+#navSpacer
 lu.navigation
-  li.navItem Home
-  li.navItem Blog
-  li.navItem Code
+  li.navItem
+    a(href="/blog/") Blog
+  li.navItem
+    a(href="//github.com/krendil") Code
+  li.navItem 
+    a(href="/about/") About
