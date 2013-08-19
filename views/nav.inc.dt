@@ -1,1 +1,4 @@
-span.navigation NAV
+lu.navigation
+  li.navItem Home
+  li.navItem Blog
+  li.navItem Code

@@ -2,9 +2,10 @@
 html
   head
     block title
-    title VibeLog: #{title}
+    title #{title}
 
     link(rel="stylesheet", href="/styles/base.css")
+    link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic", type="text/css")
   body
     nav
       include nav.inc
@@ -14,4 +15,7 @@ html
         include header.inc
 
       main
+        - static if(__traits(compiles, info.post))
+          #pageTitle
+            h2 #{title}
         block body
