@@ -15,7 +15,4 @@ html
         include header.inc
 
       main
-        - static if(__traits(compiles, info.post))
-          #pageTitle
-            h2 #{title}
         block body
