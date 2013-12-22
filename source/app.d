@@ -4,7 +4,7 @@ import vibelog.vibelog;
 
 static this() {
 
-	setLogFile("/var/log/vibelog.log", LogLevel.warn);
+	//setLogFile("/var/log/vibelog.log", LogLevel.warn);
 	auto router = new URLRouter();
 
 	auto blogsettings = new VibeLogSettings;
