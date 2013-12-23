@@ -1,0 +1,19 @@
+- import std.datetime;
+  - import vibe.inet.message;
+
+    article.blogSinglePost.h-entry
+      header
+        h2
+          a.p-name(href="posts/#{post.name}")= post.header
+        .blogPostHeaderContent
+          - if( post.headerImage.length )
+            img.headerImage(alt="Header image", src="#{post.headerImage}")
+          .blogPostHeaderText(class='#{post.headerImage.length ? "with-image" : "without-image"}')
+            time.blogPostDate.dt-published= toRFC822DateString(post.date)
+            p.p-summary #{post.subHeader}
+
+      section.blogPostContent.e-content(class='#{post.headerImage.length ? "with-image" : "without-image"}')
+        != post.renderContentAsHtml(info.textFilters)
+
+      footer
+        p Posted at #{toRFC822TimeString(post.date)} by <span class="p-author">#{post.author in info.users ? info.users[post.author].name : post.author}</span>

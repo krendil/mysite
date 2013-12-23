@@ -1,27 +1,12 @@
 extends vibelog.blocks
 
 block title
-    - auto title = info.post.header;
+  - auto title = info.post.header;
 
 block vibelog-content
-    - import std.datetime;
-    - import vibe.inet.message;
-
-    #vibelogContent
-        .blogSinglePost.h-entry
-            header
-                h2.p-name #{info.post.header}
-                .blogPostHeaderContent
-                    - if( info.post.headerImage.length )
-                        img.headerImage(alt="Header image", src="#{info.post.headerImage}")
-                    .blogPostHeaderText(class='#{info.post.headerImage.length ? "with-image" : "without-image"}')
-                        span.blogPostDate.dt-published= toRFC822DateString(info.post.date)
-                        p.p-summary #{info.post.subHeader}
-            section.blogPostContent.e-content(class='#{info.post.headerImage.length ? "with-image" : "without-image"}')
-                != info.post.renderContentAsHtml(info.textFilters)
-
-            footer
-                p Posted at #{toRFC822TimeString(info.post.date)} by <span class="p-author">#{info.post.author in info.users ? info.users[info.post.author].name : info.post.author}</span>
+  #vibelogContent
+    - auto post = info.post;
+      include vibelog.inc.post
 
 block vibelog-recent-list
-    include vibelog.inc.postlist
+  include vibelog.inc.postlist
