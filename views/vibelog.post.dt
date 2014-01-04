@@ -1,7 +1,7 @@
 extends vibelog.blocks
 
 block title
-  - auto title = info.post.header;
+  - auto title = Config.Blog.title;
 
 block vibelog-content
   #vibelogContent

@@ -10,5 +10,10 @@
 	"dependencies": {
 		"vibe-d" : "~master",
 		"vibelog" : "~master",
+        "ctini" : "~master"
 	},
+    "subConfigurations" : {
+        "ctini" : "default"
+    },
+    "stringImportPaths" : [ "views", "include" ],
 }

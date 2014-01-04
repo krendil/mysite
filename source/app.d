@@ -1,10 +1,14 @@
+import ctini.ctini;
+
 import vibe.d;
 
 import vibelog.vibelog;
 
+enum Config = IniConfig!"config.ini";
+
 static this() {
 
-	//setLogFile("/var/log/vibelog.log", LogLevel.warn);
+	setLogFile(Config.Logging.filename, LogLevel.warn);
 	auto router = new URLRouter();
 
 	auto blogsettings = new VibeLogSettings;
@@ -16,6 +20,6 @@ static this() {
 	router.get("*", serveStaticFiles("./public/"));
 
 	auto settings = new HTTPServerSettings;
-	settings.port = 8080;
+	settings.port = Config.Network.port;
 	listenHTTP(settings, router);
 }
