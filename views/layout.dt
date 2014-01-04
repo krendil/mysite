@@ -1,5 +1,7 @@
 !!! 5
 html
+  - import ctini.ctini;
+  - enum Config = IniConfig!"config.ini";
   head
     block title
     title #{title}
