@@ -1,7 +1,7 @@
 extends vibelog.blocks
 
 block title
-  - auto title = "Anti-cruft";
+  - auto title = config.title;
 
 block vibelog-content
   #vibelogContent

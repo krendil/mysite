@@ -1,7 +1,5 @@
 !!! 5
 html
-  - import ctini.ctini;
-  - enum Config = IniConfig!"config.ini";
   head
     block title
     title #{title}
@@ -9,12 +7,12 @@ html
     link(rel="stylesheet", href="/styles/base.css")
     link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic", type="text/css")
   body
-    nav
+    header#pageHeader
+      include header.inc
+
+    nav#siteNav
       include nav.inc
 
-    #maincolumn
-      header
-        include header.inc
-
+    #mainColumn
       main
         block body

@@ -8,15 +8,15 @@ enum Config = IniConfig!"config.ini";
 
 static this() {
 
-    setLogFile(Config.Logging.filename, LogLevel.warn);
+    setLogFile(Config.Logging.filename, LogLevel.trace);
     auto router = new URLRouter();
 
     foreach( s; Config.Blogs.expand ) {
         auto blogsettings = new VibeLogSettings;
-        blogsettings.configName = s.configname;
         blogsettings.siteUrl = URL.parse(s.baseUrl);
         blogsettings.databaseHost = s.dbhost;
-        registerVibeLog(blogsettings, router);
+        blogsettings.databaseName = s.configname;
+        registerVibeLog!s(blogsettings, router);
     }
 
     router.get("*", serveStaticFiles("./public/"));

@@ -11,6 +11,12 @@ body {
     background-color: #D6CCB6;
 }
 
+#vibelogContent,#siteTitle,ul.navigation {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Links */
 
 a {
@@ -27,37 +33,36 @@ a:hover {
 
 /* Nav bar */
 
-nav {
-    position: fixed;
+nav#siteNav {
     top: 0px;
     bottom: 0px;
     left: 0px;
-    width: 120px;
+    width: 100%;
     background-color: #315423;
 }
 
-#navSpacer {
-    height: 0.5em;
+nav#siteNav > *  {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 ul.navigation {
     display: block;
     position: static;
-    margin-left: auto;
-    margin-right: auto;
 }
-
 
 li.navItem {
     margin: 0.2em;
     margin-left: 1em;
     list-style-type: none;
+    display: inline;
 }
 
 li.navItem a {
     color: #e4e4e7;
     font-weight: bold;
     text-decoration: none;
+    font-size: 80%;
 }
 
 li.navItem a:hover {
@@ -66,18 +71,10 @@ li.navItem a:hover {
 
 /* Header */
 
-#maincolumn {
-    position: absolute;
-    left: 120px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
-    max-height: 100%;
-}
-
-#maincolumn > header {
+header#pageHeader {
     background-color: #333330;
     color: #d0d0d0;
+    width: 100%;
 }
 
 #siteTitle {
@@ -87,6 +84,14 @@ li.navItem a:hover {
 }
 
 /* Blog content */
+
+#mainColumn {
+    left: 120px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    max-height: 100%;
+}
 
 main {
     display: block;
@@ -101,11 +106,6 @@ main {
     //margin-left: 0.5em;
 }
 
-#vibelogContent,#pageTitle {
-    max-width: 35em;
-    margin-left: 2em;
-    margin-right: 2em;
-}
 
 /* Blog list headers */
 
@@ -139,7 +139,9 @@ header h2 a:hover {
     color: #000000;
     margin: 0.5em;
     line-height: 1.5em;
-    //font-size: larger;
+    left-padding: 20px;
+    right-padding: 20px;
+    /*font-size: larger;*/
 }
 
 /* Blog footer */

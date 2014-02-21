@@ -1,8 +1,14 @@
 #navSpacer
-lu.navigation
+ul.navigation
   li.navItem
-    a(href="/blog/") Blog
-  li.navItem
-    a(href="//github.com/krendil") Code
+    a(href="/") Home
   li.navItem 
     a(href="/about/") About
+  li.navItem
+    a(href="//github.com/krendil") Code
+  li.navItem
+    a(href="/posts/") Archive
+  li.navItem(style="display:none", hidden="true")
+    a(href="#") Tags
+  li.navItem(style="display:none", hidden="true")
+    a(href="#") Search

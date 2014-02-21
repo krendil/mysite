@@ -1,0 +1,3 @@
+[submodule "vibelog"]
+	path = vibelog
+	url = https://github.com/krendil/vibelog

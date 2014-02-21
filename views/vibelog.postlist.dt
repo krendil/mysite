@@ -2,7 +2,7 @@ extends vibelog.blocks
 
 block title
   - import vibe.inet.message;
-  - auto title = "Anti-cruft";
+  - auto title = config.title;
 
 block vibelog-content
   #vibelogContent
