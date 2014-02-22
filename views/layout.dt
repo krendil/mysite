@@ -4,7 +4,7 @@ html
     block title
     title #{title}
 
-    link(rel="stylesheet", href="/styles/base.css")
+    link(rel="stylesheet", href="/style.css")
     link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic", type="text/css")
   body
     header#pageHeader

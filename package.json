@@ -13,7 +13,8 @@
             "version"   : "~master",
             "path"      : "vibelog"
         },
-        "ctini" : "~master"
+        "ctini" : "~master",
+        "sass-vibe" : "~master"
 	},
     "subConfigurations" : {
         "ctini" : "default"

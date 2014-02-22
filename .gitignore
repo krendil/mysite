@@ -6,3 +6,4 @@ deploy.sh
 appname
 tags
 *.log
+compass/.sass-cache

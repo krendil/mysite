@@ -1,12 +1,11 @@
-#navSpacer
 ul.navigation
   li.navItem
     a(href="/") Home
   li.navItem 
     a(href="/about/") About
   li.navItem
-    a(href="//github.com/krendil") Code
-  li.navItem
+    a(rel="me" href="//github.com/krendil") Code
+  li.navItem(style="display:none", hidden="true")
     a(href="/posts/") Archive
   li.navItem(style="display:none", hidden="true")
     a(href="#") Tags

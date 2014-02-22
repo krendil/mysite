@@ -1,0 +1,280 @@
+/* line 17, ../../../../../../../../usr/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../usr/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../usr/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../usr/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../usr/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../usr/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../usr/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../usr/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../usr/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* Colours */
+/* Measurements */
+/* Mixins */
+/* Global */
+/* line 44, ../../sass/base.scss */
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13pt;
+  line-height: 18pt;
+}
+
+/* line 50, ../../sass/base.scss */
+body {
+  min-height: 100%;
+  background-color: #d6ccb6;
+}
+
+/* line 55, ../../sass/base.scss */
+h1 {
+  font-size: 26pt;
+  line-height: 36pt;
+}
+
+/* line 59, ../../sass/base.scss */
+h2 {
+  font-size: 18.2pt;
+  line-height: 25.2pt;
+}
+
+/* line 63, ../../sass/base.scss */
+h3 {
+  font-size: 15.6pt;
+  line-height: 21.6pt;
+}
+
+/* line 67, ../../sass/base.scss */
+#vibelogContent, #siteTitle, ul.navigation {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Links */
+/* line 74, ../../sass/base.scss */
+a {
+  color: #333330;
+}
+
+/* line 78, ../../sass/base.scss */
+a:visited {
+  color: #666660;
+}
+
+/* line 82, ../../sass/base.scss */
+a:hover {
+  color: #235448;
+}
+
+/* Nav bar */
+/* line 88, ../../sass/base.scss */
+nav#siteNav {
+  width: 100%;
+  background-color: #2e4370;
+}
+
+/* line 93, ../../sass/base.scss */
+ul.navigation {
+  display: block;
+}
+
+/* line 97, ../../sass/base.scss */
+li.navItem {
+  margin-right: 1em;
+  list-style-type: none;
+  display: inline;
+}
+
+/* line 103, ../../sass/base.scss */
+li.navItem a {
+  color: #e4e4e7;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 10.4pt;
+  line-height: 14.4pt;
+}
+
+/* line 110, ../../sass/base.scss */
+li.navItem a:hover {
+  color: #ffffff;
+}
+
+/* Header */
+/* line 116, ../../sass/base.scss */
+header#pageHeader {
+  background-color: #333330;
+  color: #d0d0d0;
+  width: 100%;
+}
+
+/* Blog content */
+/* line 125, ../../sass/base.scss */
+#mainColumn {
+  left: 120px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  max-height: 100%;
+}
+
+/* line 133, ../../sass/base.scss */
+main {
+  display: block;
+  background-color: #d6ccb6;
+  min-width: 200px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 1em;
+}
+
+/* Blog list headers */
+/* line 148, ../../sass/base.scss */
+header h2 a {
+  color: black;
+  text-decoration: none;
+}
+
+/* line 153, ../../sass/base.scss */
+header h2 a:visited {
+  color: #333330;
+}
+
+/* line 157, ../../sass/base.scss */
+header h2 a:hover {
+  color: #235448;
+}
+
+/* Blog post text */
+/* line 163, ../../sass/base.scss */
+.blogPostHeaderText {
+  font-size: smaller;
+  font-style: italic;
+  color: #235448;
+}
+
+/* line 169, ../../sass/base.scss */
+.blogPostDate {
+  display: block;
+  float: right;
+}
+
+/* line 174, ../../sass/base.scss */
+.blogPostContent p {
+  color: black;
+  margin-top: 9pt;
+  margin-bottom: 9pt;
+}
+
+/* Blog footer */
+/* line 181, ../../sass/base.scss */
+.blogPost footer, .blogSinglePost footer {
+  font-size: smaller;
+  font-style: italic;
+}
+
+/* Blog list footer */
+/* line 188, ../../sass/base.scss */
+.pageNumbers {
+  margin-top: 0.5em;
+  font-size: smaller;
+}
+
+/* Blog comments */
+/* line 195, ../../sass/base.scss */
+.comments {
+  margin-top: 0.5em;
+}
+
+/* line 199, ../../sass/base.scss */
+.comments h2 {
+  font-style: italic;
+}
+
+/* line 203, ../../sass/base.scss */
+.comment {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* line 208, ../../sass/base.scss */
+.commentHeader {
+  font-style: italic;
+  font-size: smaller;
+  color: #235448;
+}
+
+/* line 214, ../../sass/base.scss */
+.commentContent {
+  padding-top: 0.2em;
+  padding-left: 2em;
+  padding-right: 1em;
+  padding-bottom: 0.2em;
+}
+
+/* line 221, ../../sass/base.scss */
+.comment-form {
+  width: 100%;
+  padding-top: 0.2em;
+  padding-left: 2em;
+  padding-right: 1em;
+  padding-bottom: 0.2em;
+}
+
+/* line 229, ../../sass/base.scss */
+.comment-form textarea {
+  width: 100%;
+}
