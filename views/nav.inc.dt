@@ -4,7 +4,7 @@ ul.navigation
   li.navItem 
     a(href="/about/") About
   li.navItem
-    a(rel="me", href="//github.com/krendil") Code
+    a(rel="me", href="https://github.com/krendil") Code
   li.navItem(style="display:none", hidden="true")
     a(href="/posts/") Archive
   li.navItem(style="display:none", hidden="true")
