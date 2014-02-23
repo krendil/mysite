@@ -1,0 +1,39 @@
+{
+	"name"          : "appname",
+	"description"   : "My fabulous new app",
+	"copyright"     : "Copyright (c) 2014 Me.",
+	"homepage"      : "http://appname.org",
+	"version"       : "1.0.0",
+	"authors": [
+		"David Osborne"
+	],
+	"dependencies": {
+		"vibe-d" : "~master",
+		"vibelog" : {
+            "version"   : "~master",
+            "path"      : "vibelog"
+        },
+        "ctini" : "~master",
+	},
+    "targetType" : "executable",
+    "configurations" : [
+        {
+            "name" : "dave",
+            "stringImportPaths" : ["views", "include/dave"],
+            "targetName" : "dave",
+        },
+        {
+            "name" : "krendil",
+            "stringImportPaths" : ["views", "include/krendil"],
+            "targetName" : "krendil"
+        },
+        {
+            "name" : "davido",
+            "stringImportPaths" : ["views", "include/davido"],
+            "targetName" : "davido"
+        }
+    ],
+    "subConfigurations" : {
+        "ctini" : "default"
+    },
+}

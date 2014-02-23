@@ -1,9 +1,20 @@
-.dub
-*.o
+#Cache folders for tools
+.dub/
+compass/.sass-cache/
+
 *.swp
+*.log
+
+#Files only useful on dev machine
 stage.sh
 deploy.sh
-appname
 tags
-*.log
-compass/.sass-cache
+
+#Executables and build artifacts
+/appname
+/dave
+/krendil
+/davido
+*.o
+
+
