@@ -61,7 +61,9 @@ h2 {
 }
 
 h3 {
-    @include font-grow(1.2);
+    @include font-grow(0.8);
+    color: $secondary-colour;
+    font-weight: bold;
 }
 
 #vibelogContent,#siteTitle,ul.navigation {
@@ -168,7 +170,6 @@ header h2 a:hover {
 
 .blogPostDate {
     display: block;
-    float: right;
 }
 
 .blogPostContent p {

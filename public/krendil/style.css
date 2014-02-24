@@ -94,11 +94,13 @@ h2 {
 
 /* line 63, ../../sass/base.scss */
 h3 {
-  font-size: 15.6pt;
-  line-height: 21.6pt;
+  font-size: 10.4pt;
+  line-height: 14.4pt;
+  color: #235448;
+  font-weight: bold;
 }
 
-/* line 67, ../../sass/base.scss */
+/* line 69, ../../sass/base.scss */
 #vibelogContent, #siteTitle, ul.navigation {
   max-width: 700px;
   margin-left: auto;
@@ -106,41 +108,41 @@ h3 {
 }
 
 /* Links */
-/* line 74, ../../sass/base.scss */
+/* line 76, ../../sass/base.scss */
 a {
   color: #333330;
 }
 
-/* line 78, ../../sass/base.scss */
+/* line 80, ../../sass/base.scss */
 a:visited {
   color: #666660;
 }
 
-/* line 82, ../../sass/base.scss */
+/* line 84, ../../sass/base.scss */
 a:hover {
   color: #235448;
 }
 
 /* Nav bar */
-/* line 88, ../../sass/base.scss */
+/* line 90, ../../sass/base.scss */
 nav#siteNav {
   width: 100%;
   background-color: #662b23;
 }
 
-/* line 93, ../../sass/base.scss */
+/* line 95, ../../sass/base.scss */
 ul.navigation {
   display: block;
 }
 
-/* line 97, ../../sass/base.scss */
+/* line 99, ../../sass/base.scss */
 li.navItem {
   margin-right: 1em;
   list-style-type: none;
   display: inline;
 }
 
-/* line 103, ../../sass/base.scss */
+/* line 105, ../../sass/base.scss */
 li.navItem a {
   color: #e4e4e7;
   font-weight: bold;
@@ -149,13 +151,13 @@ li.navItem a {
   line-height: 14.4pt;
 }
 
-/* line 110, ../../sass/base.scss */
+/* line 112, ../../sass/base.scss */
 li.navItem a:hover {
   color: #ffffff;
 }
 
 /* Header */
-/* line 116, ../../sass/base.scss */
+/* line 118, ../../sass/base.scss */
 header#pageHeader {
   background-color: #333330;
   color: #d0d0d0;
@@ -163,7 +165,7 @@ header#pageHeader {
 }
 
 /* Blog content */
-/* line 125, ../../sass/base.scss */
+/* line 127, ../../sass/base.scss */
 #mainColumn {
   left: 120px;
   right: 0px;
@@ -172,7 +174,7 @@ header#pageHeader {
   max-height: 100%;
 }
 
-/* line 133, ../../sass/base.scss */
+/* line 135, ../../sass/base.scss */
 main {
   display: block;
   background-color: #d6ccb6;
@@ -182,37 +184,36 @@ main {
 }
 
 /* Blog list headers */
-/* line 148, ../../sass/base.scss */
+/* line 150, ../../sass/base.scss */
 header h2 a {
   color: black;
   text-decoration: none;
 }
 
-/* line 153, ../../sass/base.scss */
+/* line 155, ../../sass/base.scss */
 header h2 a:visited {
   color: #333330;
 }
 
-/* line 157, ../../sass/base.scss */
+/* line 159, ../../sass/base.scss */
 header h2 a:hover {
   color: #235448;
 }
 
 /* Blog post text */
-/* line 163, ../../sass/base.scss */
+/* line 165, ../../sass/base.scss */
 .blogPostHeaderText {
   font-size: smaller;
   font-style: italic;
   color: #235448;
 }
 
-/* line 169, ../../sass/base.scss */
+/* line 171, ../../sass/base.scss */
 .blogPostDate {
   display: block;
-  float: right;
 }
 
-/* line 174, ../../sass/base.scss */
+/* line 175, ../../sass/base.scss */
 .blogPostContent p {
   color: black;
   margin-top: 9pt;
@@ -220,44 +221,44 @@ header h2 a:hover {
 }
 
 /* Blog footer */
-/* line 181, ../../sass/base.scss */
+/* line 182, ../../sass/base.scss */
 .blogPost footer, .blogSinglePost footer {
   font-size: smaller;
   font-style: italic;
 }
 
 /* Blog list footer */
-/* line 188, ../../sass/base.scss */
+/* line 189, ../../sass/base.scss */
 .pageNumbers {
   margin-top: 0.5em;
   font-size: smaller;
 }
 
 /* Blog comments */
-/* line 195, ../../sass/base.scss */
+/* line 196, ../../sass/base.scss */
 .comments {
   margin-top: 0.5em;
 }
 
-/* line 199, ../../sass/base.scss */
+/* line 200, ../../sass/base.scss */
 .comments h2 {
   font-style: italic;
 }
 
-/* line 203, ../../sass/base.scss */
+/* line 204, ../../sass/base.scss */
 .comment {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
 
-/* line 208, ../../sass/base.scss */
+/* line 209, ../../sass/base.scss */
 .commentHeader {
   font-style: italic;
   font-size: smaller;
   color: #235448;
 }
 
-/* line 214, ../../sass/base.scss */
+/* line 215, ../../sass/base.scss */
 .commentContent {
   padding-top: 0.2em;
   padding-left: 2em;
@@ -265,7 +266,7 @@ header h2 a:hover {
   padding-bottom: 0.2em;
 }
 
-/* line 221, ../../sass/base.scss */
+/* line 222, ../../sass/base.scss */
 .comment-form {
   width: 100%;
   padding-top: 0.2em;
@@ -274,7 +275,7 @@ header h2 a:hover {
   padding-bottom: 0.2em;
 }
 
-/* line 229, ../../sass/base.scss */
+/* line 230, ../../sass/base.scss */
 .comment-form textarea {
   width: 100%;
 }
