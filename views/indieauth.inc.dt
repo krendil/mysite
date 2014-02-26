@@ -1,0 +1,5 @@
+form(action="http://indieauth.com/auth", method="get")
+  label(for="indie_auth_url") Your domain:
+  input#indie_auth_url(type="text", name="me", placeholder="yourdomain.com")
+  button(type="submit") Sign In
+  input(type="hidden", name="redirect_uri" value="http://davido.anticruft.com/authed")

@@ -1,3 +1,6 @@
+
+import std.string;
+
 import ctini.ctini;
 
 import vibe.d;
@@ -27,3 +30,4 @@ static this() {
     settings.options |= HTTPServerOption.parseFormBody | HTTPServerOption.parseURL;
     listenHTTP(settings, router);
 }
+
