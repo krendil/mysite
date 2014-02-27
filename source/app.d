@@ -11,7 +11,7 @@ enum Config = IniConfig!"config.ini";
 
 static this() {
 
-    setLogFile(Config.Logging.filename, LogLevel.trace);
+    setLogFile(Config.Logging.filename, LogLevel.info);
     auto router = new URLRouter();
 
     auto blogConf = Config.Blog;
