@@ -1,0 +1,10 @@
+extends layout
+
+block title
+  - auto title = config.title;
+
+block body
+  #vibelogContent
+    h2 You must log in before continuing
+    include indieauth.inc
+
