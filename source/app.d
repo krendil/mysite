@@ -9,9 +9,12 @@ import vibelog.vibelog;
 
 enum Config = IniConfig!"config.ini";
 
+shared static this() {
+    setLogFile(Config.Logging.filename, LogLevel.info);
+}
+
 static this() {
 
-    setLogFile(Config.Logging.filename, LogLevel.info);
     auto router = new URLRouter();
 
     auto blogConf = Config.Blog;
