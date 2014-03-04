@@ -18,8 +18,11 @@ $visited-colour: #666660;
 
 /* Measurements */
 
-$base-font-size:    13pt;
-$base-line-height:  18pt;
+$base-font-size:    14pt;
+$base-line-height:  22pt;
+
+/* Font weight */
+$bold: 600;
 
 
 /* Mixins */
@@ -61,14 +64,24 @@ h2 {
 }
 
 h3 {
-    @include font-grow(0.8);
+    //@include font-grow(0.9);
     color: $secondary-colour;
-    font-weight: bold;
+    font-weight: $bold;
+    margin-bottom: -0.4*$base-line-height;
+    margin-top: 0.4*$base-line-height;
 }
 
 #vibelogContent,#siteTitle,ul.navigation {
     max-width: 700px;
     @include hmargins(auto);
+}
+
+em {
+    font-style: italic;
+}
+
+ul {
+    list-style: circle inside;
 }
 
 /* Links */
@@ -104,7 +117,7 @@ li.navItem {
 
 li.navItem a {
     color: $not-white;
-    font-weight: bold;
+    font-weight: $bold;
     text-decoration: none;
     @include font-grow(0.8);
 }
@@ -119,6 +132,7 @@ header#pageHeader {
     background-color: $dark-grey;
     color: $light-grey;
     width: 100%;
+    font-weight: $bold;
 }
 
 
