@@ -9,6 +9,7 @@ $dark-grey:         #333330;
 $light-grey:        #D0D0D0;
 
 $not-white:         #e4e4e7;
+$white:             #ffffff;
 
 $text-colour:       #000000;
 $bg-colour:         #D6CCB6;
@@ -123,7 +124,7 @@ li.navItem a {
 }
 
 li.navItem a:hover {
-    color: #ffffff;
+    color: $white;
 }
 
 /* Header */
@@ -133,6 +134,20 @@ header#pageHeader {
     color: $light-grey;
     width: 100%;
     font-weight: $bold;
+}
+
+#pageHeader a {
+    text-decoration: none;
+    color: $light-grey;
+}
+
+#pageHeader a:hover {
+    color: $not-white;
+}
+
+#preTitle {
+    @include font-grow(0.8);
+    margin-bottom: -11pt;
 }
 
 
