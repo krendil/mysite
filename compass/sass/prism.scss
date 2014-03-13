@@ -1,0 +1,68 @@
+@import "colours";
+
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: $not-white;
+	text-shadow: 0 1px rgba(0,0,0,0.3);
+	font-family: monospace;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: $dark-grey;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+}
+
+.token.comment,
+.token.punctuation {
+	color: $medium-grey;
+}
+
+.token.boolean,
+.token.number{
+	color: $light-red;
+}
+
+.token.string,
+.token.builtin {
+	color: $light-green;
+}
+
+.token.prompt,
+.token.keyword {
+    color: $light-blue;
+}
+
+.token.operator,
+.token.function,
+.token.class-name {
+    color: $beige;
+}
