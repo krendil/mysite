@@ -12,7 +12,6 @@ $base-line-height:  22pt;
 /* Font weight */
 $bold: 600;
 
-
 /* Mixins */
 
 @mixin font-grow($amount) {
@@ -191,8 +190,12 @@ header h2 a:hover {
 
 /* Blog post text */
 
+article.blogSinglePost {
+    padding-bottom: 1em;
+}
+
 .blogPostHeaderText {
-    font-size: smaller;
+    @include font-grow(0.9);
     font-style: italic;
     color: $secondary-colour;
 }
@@ -209,8 +212,11 @@ header h2 a:hover {
 /* Blog footer */
 
 .blogPost footer,.blogSinglePost footer {
-    font-size: smaller;
+    @include font-grow(0.9);
     font-style: italic;
+    text-align: right;
+    color: $secondary-colour;
+    margin-top: -0.5em;
 }
 
 /* Blog list footer */
