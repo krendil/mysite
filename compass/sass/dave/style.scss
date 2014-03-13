@@ -1,3 +1,5 @@
-$primary-colour: #2E4370;
+@import "colours";
+
+$primary-colour: $blue;
 
 @import "base";

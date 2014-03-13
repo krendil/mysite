@@ -7,10 +7,16 @@ import vibe.d;
 
 import vibelog.vibelog;
 
+import mymarkdown;
+
 enum Config = IniConfig!"config.ini";
 
 shared static this() {
-    setLogFile(Config.Logging.filename, LogLevel.info);
+    setLogFile(Config.Logging.filename, LogLevel.debug_);
+}
+
+string myFilter(string input) {
+    return filterMyMarkdown(input);
 }
 
 static this() {
@@ -23,6 +29,7 @@ static this() {
     blogsettings.siteUrl = URL.parse(blogConf.baseUrl);
     blogsettings.databaseHost = blogConf.dbhost;
     blogsettings.databaseName = blogConf.configname;
+    blogsettings.textFilters ~= &myFilter;
 
     registerVibeLog!(blogConf)(blogsettings, router);
 
